@@ -30,24 +30,27 @@ function App() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.classList.add('bg-[#353a47bf]');
-    } else {
-      document.body.classList.remove('bg-[#353a47bf]');
-    }
-    return () => {
-      document.body.classList.remove('bg-[#353a47bf]');
-    };
-  }, [isMenuOpen]);
+  // useEffect(() => {
+  //   if (isMenuOpen) {
+  //     document.body.classList.add('bg-[#353a47bf]');
+  //   } else {
+  //     document.body.classList.remove('bg-[#353a47bf]');
+  //   }
+  //   return () => {
+  //     document.body.classList.remove('bg-[#353a47bf]');
+  //   };
+  // }, [isMenuOpen]);
   return (
-    <div className="App">
-      <div
-        className='header flex items-center justify-between'
-        style={{
-          backgroundColor: isMenuOpen ? 'rgba(53, 58, 71, 0.75)' : 'rgba(255, 255, 255, 1)'
+    <div className="App" >
+    
+      <div className='header'
+         style={{
+          backgroundColor: isMenuOpen
+            ? 'rgba(53, 58, 71, 0.75)'  // Dark gray with 75% opacity
+            : 'rgba(255, 255, 255, 1)', // Fully opaque white
+          transition: 'background-color 0.3s ease-in-out'
         }}
-      >
+>
         <button className='menu-btn lg:hidden' onClick={toggleMenu}>
           <svg
             className="w-6 h-6 text-zinc-900"
@@ -60,7 +63,7 @@ function App() {
           </svg>
         </button>
         <img className='logo w-28' src={logo} alt="Logo" />
-        <div className={`lg:flex lg:gap-7 lg:items-center lg:relative lg:static fixed top-0 left-0 h-full w-64  z-50 p-4 transition-all transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} lg:translate-x-0 lg:opacity-100 lg:w-auto lg:bg-transparent lg:p-0`} style={{ background: "#fff" }}>
+        <div className={`lg:flex lg:gap-7 lg:items-center lg:relative lg:static fixed top-0 left-0 h-full w-64  z-50 p-4 transition-all transform ${isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-full opacity-0'} lg:translate-x-0 lg:opacity-100 lg:w-auto lg:bg-transparent lg:p-0 ` } style={{ background: "#fff" }}>
           <div className='close-menu-text'>
             <span className='menutext' >Menu</span>
             <button
@@ -143,6 +146,7 @@ function App() {
           <button className='signup-btn text-lg px-10'>Sign up</button>
         </div>
       </div>
+
       <div className='below-header'>
         <div className=' main-banner'>
           <div className='main-banner-wrapper'>
@@ -220,6 +224,7 @@ function App() {
           </div>
         </div>
         <div className='talk-to-sales'>
+          
           <h4 className='talktosalestext text-xl'>Are you a large business looking for custom solutions?</h4>
           <button className='talktosale-btn'>Talk to sales</button>
         </div>
@@ -316,7 +321,7 @@ function App() {
         <div className='finacials'>
           <div className='finacials-wapper'>
             <div className='financials-title'>
-              <h1 className='text-2xl font-semibold text-black-800 md:text-4xl'>Make Money, Free-Risk</h1>
+              <h1 className='text-3xl font-semibold text-black-800 sm:text-4xl'>Make Money, Free-Risk</h1>
               <p>You pay for fulfillment only when you make a sale</p>
             </div>
             <div className='financials_explantion-table'>
@@ -336,7 +341,7 @@ function App() {
             </div>
             <div className='start-selling'>
               <button className='start-selling-btn'>Start selling</button>
-              <p style={{ color: "#c4c7c8" }}>100% Free to use · 900+ Products · Largest print network</p>
+              <p style={{ color: "#c4c7c8"}}>100% Free to use · 900+ Products · Largest print network</p>
             </div>
           </div>
         </div>
@@ -355,8 +360,8 @@ function App() {
               <img className='footer-icon' src={redditicon} alt="" />
             </div>
           </div>
-          <div className='footer-content  '>
-            <div className='footer-integration flex flex-nowrap '>
+          <div className='footer-content flex flex-wrap gap-4 '>
+            <div className='footer-integration'>
               <span className='font-semibold text-xl'>Integrations</span>
               <div> <ul className='footer-lists'>
                 <li>Shopify</li>

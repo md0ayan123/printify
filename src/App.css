@@ -1,5 +1,8 @@
+
+
 .header {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -7,11 +10,19 @@
   border-bottom: 2px solid rgb(237, 234, 234);
   background-color: #ffffff;
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  /* text-align: center; */
   align-items: center;
   justify-content: space-evenly;
   padding: 0px 0;
-  z-index: 1000;
+  /* z-index: 1000; */
+}
+.below-header{
+
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
 }
 
 .logo {
@@ -22,23 +33,26 @@
   flex-wrap: nowrap;
   cursor: pointer;
   display: flex;
-  /* border: 2px solid red; */
   color: #353a47;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 700px;
 
+
   li {
     display: flex;
     align-items: center;
-    /* padding: 0px 2px; */
   }
+}
+.listandarrow{
+
+  display:flex;
+
 }
 .ul-list :hover {
   transition: color 0.15s;
   color: #2dc558;
 }
 .image-container {
-  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -88,7 +102,7 @@
   pointer-events: auto;
 }
 .header-btn {
-  /* border: 2px solid red; */
+ 
   margin: 20px 7px;
   padding-left: 32px;
 }
@@ -101,6 +115,7 @@
   border: 1px solid grey;
   border-radius: 4px;
   padding: 1px 15px;
+  align-items: center;
 }
 .signup-btn {
   font-weight: 500;
@@ -108,34 +123,33 @@
   cursor: pointer;
   color: #fff;
   display: flex;
-
   box-shadow: 0 0 #00c3603d;
   background-color: #39b75d;
   border-radius: 4px;
   padding: 0px 15px;
   justify-content: end;
+  align-items: center;
 }
 
 .main-banner {
-  /* display: flex; */
+  display: flex;
   margin-top: 10%;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
 
-  /* border: 2px solid red; */
+ 
 }
 .main-banner-wrapper {
   display: flex;
   flex-direction: column;
+  padding-left: 24px;
   row-gap: 20px;
-}
-.title {
   /* flex-wrap: wrap; */
-  /* border: 2px solid red; */
+ 
   /* width: 300px; */
-  font-weight: 500;
-  font-size: 46px;
+  
 }
 .check-mark {
   gap: 12px;
@@ -147,7 +161,7 @@
   height: 14px;
 }
 .mark {
-  /* border: 2px solid red; */
+ 
 
   align-items: center;
   display: flex;
@@ -157,14 +171,14 @@
 .main-banner-btn {
   height: 50px;
   /* justify-content: center; */
-  /* border: 2px solid red; */
+ 
 
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
 .startbtn {
-  /* border: 2px solid red; */
+ 
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
@@ -177,7 +191,7 @@
   padding: 12px 32px;
 }
 .playbtn {
-  /* border: 2px solid red; */
+ 
   gap: 4px;
   color: #353a47;
   font-weight: 500;
@@ -188,49 +202,50 @@
   padding: 12px 32px;
 }
 .features {
-  margin-top: 5%;
-  /* border: 2px solid red; */
+  /* margin-top: 5%; */
+
   width: 340px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 12px;
 }
 .features-wrapper {
-  /* border: 2px solid red; */
+ 
   display: flex;
   justify-content: space-evenly;
   padding: 0px 43px;
 }
 .how-its-work {
-  margin: 10% auto;
+ 
   display: flex;
   flex-direction: column;
-  margin: 5% auto;
-  /* border: 2px solid red; */
+ margin: 0px auto;
+
   justify-content: center;
-  width: 600px;
+  width: 600px;  
   gap: 32px;
   p {
     color: "#485256";
   }
 }
 .clothes {
-  /* border: 2px solid red; */
+ 
   display: flex;
   justify-content: center;
   background-color: #f7f7f7;
-  padding: 30px 120px;
+  /* padding: 30px 120px; */
 }
 .clothe {
   display: flex;
-  /* border: 2px solid red; */
+
   width: 320px;
   flex-direction: column;
-  gap: 12px;
-  padding: 3px 32px;
+  /* gap: 12px; */
+  /* padding: 3px 32px; */
 }
 .talk-to-sales {
-  /* border: 2px solid red; */
+ 
   display: flex;
   margin: 5% auto;
   justify-content: space-around;
@@ -248,28 +263,32 @@
   border-radius: 20px;
   font-weight: 500;
 }
-.talktosales-text {
-  /* border: 2px solid red; */
+.talktosalestext {
+
   width: 400px;
   color: #1f6b45;
   font-weight: 700;
+  padding-left:12px;
 }
 .talktosale-btn {
   cursor: pointer;
-  background-color: #e2f7e3;
-  padding: 0px 17px;
+  background-color: white;
+  padding: 14px 14px;
   border-radius: 5px;
   font-weight: 500;
-  color: #1f6b45;
+  color: black;
+}
+.talktosale-btn :hover {
+   color: #39b75d;
 }
 .social-proof {
-  /* border: 2px solid red; */
-  /* height: 800px; */
+
   justify-content: center;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
+  padding: 40px;
 }
 .social-proof-wrapper {
   display: flex;
@@ -280,7 +299,7 @@
 
 .social-proof-heading {
   /* height: 168px; */
-  /* border: 2px solid red; */
+ 
   display: flex;
   flex-direction: row;
   width: 350px;
@@ -390,9 +409,7 @@
   line-height: 1.5;
   margin-top: 16px;
 }
-.finacials{
-  margin-top: 10%;
-}
+
 .finacials-wapper {
   flex-direction: column;
   background-color: #203741;
@@ -405,21 +422,17 @@
 }
 .financials-title {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 12px;
-  width: 385px;
-
+  /* width: 100vw; */
   color: #fff;
-  h1 {
-    font-weight: 700;
-    line-height: 56px;
-    font-size: 40px;
-  }
+ 
 }
 
 .financials_explantion-table {
 
-  width: 385px;
+
   background-color: #17262b;
   border-radius: 10px;
   padding: 40px;
@@ -446,7 +459,7 @@
   
 }
 .start-selling {
-  width: 385px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -460,14 +473,13 @@
   padding: 4px 23px;
   border-radius: 4px;
 }
-.footer-class {
-  margin-top: 5%;
-}
+
 .footer-class-icon {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 0px 119px;
-  padding: 0px 32px;
+  padding: 12px ;
+  /* margin: 0px 119px;
+  padding: 0px 32px; */
 
   display: flex;
 }
@@ -484,7 +496,7 @@
 .footer-integration {
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 13px;
 }
 .footer-content {
   margin-top: 10%;
@@ -499,6 +511,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 7px;
+  margin-bottom: 15%;
 }
 .footer-lists :hover {
   color: #39b75d;
@@ -521,6 +534,7 @@
   padding: 12px 12px;
 }
 
+
 @media only screen and (max-width: 1300px){
   
 .header{
@@ -538,28 +552,22 @@
   .signup-btn {
     padding: 8px 16px;
   }
- .menu-btn {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    outline: none;
-  }
-
+ 
   .ul-list {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 20px;
     margin-top: 10px;
     width: 100%;
   }
 
   /* Hide navigation links initially and show them when menu is opened */
-  .ul-list.hidden {
+  /* .ul-list.hidden {
     display: none;
-  }
+  } */
 
   .ul-list.block {
     display: flex;
+    align-items: center;
   }
 
   .header-btn {
@@ -568,14 +576,16 @@
   }
   .talk-to-sales
   {
-    width: 700px;
+    width: 70%;
   }
 
   .finacials-wapper{
-    width: 800px;
+    width: 90vw;
   }
   .social-proof-wrapper{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
  
   }
   .footer-class-icon {
@@ -586,42 +596,266 @@
   .social-proof-heading{
     width: 300px;
   }
-}
-@media only screen and (max-width: 914px){
-  .finacials{
-    width: 700px;
-    display: flex;
-    margin: 0px auto;
-  }
-  .finacials{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  }
-@media only screen and (max-width: 750px){
-  .finacials{
-    width: 100%;
-    margin: 12px 20px ;
-  }
-  .how-its-work{
-    margin: 10% 15%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid red;
-    width: 100%;
+  .clothe{
+  
+    width: 500px;
+    align-items: center;
+    padding: 24px;
   }
   .talk-to-sales{
-    width: 100%;
-    background-size: 50%;
+    width: 80%;
+    background-size: 60%;
   background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
   background-repeat: no-repeat;
-  background-position: 380px 0px;
+  background-position: 400px 0px;
   background-color: #e2f7e3;
   background-clip: content-box;
   }
-
+ 
 }
+@media only screen and (max-width: 1024px){
+  .close-menu-text{
+  
+    color: #000000;
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 12px;
+    
+  }
+  .closebtn{
+   
+    position: relative;
+    top: 5px;
+  }
+  .menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .ul-list.block{
+    display: flex;
+  
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: start;
+    align-items: start;
+    li{
+      font-size: 23px;
+      font-weight: 500;
+    }
+    .listandarrow{
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+  }
+
+  .footer-content{
+  
+    display: flex;
+    flex-wrap: wrap;
+  } 
+
+  .features{
+  
+    width: 500px;
+  }
+  .talk-to-sales{
+    width: 80%;
+    background-size: 60%;
+  background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+  background-repeat: no-repeat;
+  background-position: 320px 0px;
+  background-color: #e2f7e3;
+  background-clip: content-box;
+  }
+  .main-banner-wrapper{
+  
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  
+  }
+  }
+@media only screen and (max-width: 750px){
+  /* .finacials{
+    width: 100%;
+    /* margin: 12px 20px ; */
+  /* }  */
+  .how-its-work{
+   
+    display: flex;
+    flex-wrap: wrap;
+  
+    width: 70%;
+
+  }
+  .talk-to-sales{
+    width: 80%;
+    background-size: 60%;
+  background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+  background-repeat: no-repeat;
+  background-position: 300px 0px;
+  background-color: #e2f7e3;
+  background-clip: content-box;
+  /* border: 2px solid greenyellow; */
+ 
+  }
+  .talktosalestext{
+    font-size: 19px;
+  }
+  .talktosale-btn{
+  
+    padding: 11px 1px;
+    margin-right: 12px;
+  }
+  .talktosalestext{
+    /* padding: 12px; */
+    padding-left: 12px;
+  }
+  .footer-class-icon{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-icon{
+    /* border: 2px solid ; */
+    display: flex;
+    gap: 3px;
+  }
+}
+@media only screen and (max-width:650px){
+  .talk-to-sales{
+    width: 80%;
+    background-size: 64%;
+  background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+  background-repeat: no-repeat;
+  background-position: 230px 0px;
+  background-color: #e2f7e3;
+  background-clip: content-box;
+  }
+  .talktosale-btn{
+  
+     padding: 9px 4px;
+     width: 124px;
+     /* margin-right: 12px;  */
+    }
+  }
+    @media only screen and (max-width:600px){
+      .talk-to-sales{
+        width: 80%;
+        background-size: 80%;
+        background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+        background-repeat: no-repeat;
+        background-position: 180px 0px;
+        background-color: #e2f7e3;
+        background-clip: content-box;
+      }
+      .talktosale-btn{
+      
+        padding: 6px 0px;
+        width: 130px;
+        /* margin-right: 12px;  */
+      }
+      
+      .footer-content{
+        padding: 12px;
+      }
+    }
+      @media only screen and (max-width:510px){
+        .talk-to-sales{
+          width: 80%;
+          background-size: 100%;
+          background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+          background-repeat: no-repeat;
+          background-position: 120px 0px;
+          background-color: #e2f7e3;
+          background-clip: content-box;
+        }
+      
+        .talktosale-btn{
+         
+          padding: 5px 0px; 
+          width: 160px;
+          /* margin-right: 12px;  */
+         }
+         .financials_explantion-table {
+        
+          padding: 20px;
+         }
+        }
+         @media only screen and (max-width:400px){
+          .talktosale-btn{
+            padding: 8px 0px;
+            width: 180px;
+          }
+          .talk-to-sales{
+            width: 80%;
+            background-size:100%;
+            background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+            background-repeat: no-repeat;
+            background-position: 97px  10px;
+            background-color: #e2f7e3;
+            background-clip: content-box;
+          }
+        
+         }
+         @media only screen and (max-width:440px){
+          .talktosale-btn{
+            padding: 8px 0px;  
+            width: 22 0px;
+          }
+          .talktosalestext{
+            font-size: 14px;
+          }
+          .financials_explantion-table {
+            padding: 10px;
+          }
+          .footer-content{
+            display: flex;
+            justify-content: start;
+            align-items: start  ;
+          }
+          .talk-to-sales{
+            width: 80%;
+            background-size:100%;
+            background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+            background-repeat: no-repeat;
+            background-position: 97px  0px;
+            background-color: #e2f7e3;
+            background-clip: content-box;
+          }
+         }
+         @media only screen and (max-width:380px){
+          .header-btn{
+          
+            padding: 0px 0px;
+          }
+          .talktosale-btn{
+            width: 250px;
+            padding: 10px  0px;
+          }
+          .talk-to-sales{
+            width: 80%;
+            background-size:140%;
+            background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
+            background-repeat: no-repeat;
+            background-position: 30px  0px;
+            background-color: #e2f7e3;
+            background-clip: content-box;
+          }
+
+         }
+    
+  
+
+
 
 
 
