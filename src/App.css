@@ -1,8 +1,8 @@
 
 
 .header {
-  position: fixed;
 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -19,10 +19,10 @@
   /* z-index: 1000; */
 }
 .below-header{
-
   display: flex;
   gap: 40px;
   flex-direction: column;
+  margin-top: 10%;
 }
 
 .logo {
@@ -133,7 +133,7 @@
 
 .main-banner {
   display: flex;
-  margin-top: 10%;
+  /* margin-top: %; */
   /* margin-left: 10%; */
   flex-direction: column;
   justify-content: center;
@@ -198,6 +198,7 @@
   cursor: pointer;
   align-items: center;
   display: flex;
+  background-color: rgb(237, 235, 237);
   border-radius: 3px;
   padding: 12px 32px;
 }
@@ -729,6 +730,9 @@
     display: flex;
     gap: 3px;
   }
+  .signupbtn{
+    padding:0px ;
+  }
 }
 @media only screen and (max-width:650px){
   .talk-to-sales{
@@ -833,8 +837,10 @@
           }
          }
          @media only screen and (max-width:380px){
+          .header{
+            height: 100px;
+          }
           .header-btn{
-          
             padding: 0px 0px;
           }
           .talktosale-btn{
@@ -850,7 +856,54 @@
             background-color: #e2f7e3;
             background-clip: content-box;
           }
+           .header-btn{
 
+            display: flex;
+            flex-direction: column;
+            padding: 0px 0px;
+            gap: 2px;
+            width: 100px;
+        
+            /* height: 50px; */
+
+           }
+           .login-btn{
+            /* border: 2px solid red ; */
+            height: 30px;
+            width: 100px;
+            padding: 0px 20px ;
+           }
+           .signup-btn{
+            /* border: 2px solid red ; */
+            height: 30px;
+            width: 100px;
+          
+           }
+           .rating{
+            display: flex;
+            flex-wrap: wrap;
+           }
+           .main-banner-btn{
+            /* border: 2px solid red; */
+            padding: 0px;
+            gap: 4px  ;
+            width: 300px;
+            justify-content: space-evenly;
+           }
+           .startbtn{
+            padding: 0px 21px ;
+           }
+           .playbtn{
+            /* gap: 10; */
+            padding: 0px 12px;
+           }
+           .icons{
+            display: flex;
+            flex-wrap: wrap;
+           }
+           .below-header{
+            margin-top: 25%;
+           }
          }
     
   
