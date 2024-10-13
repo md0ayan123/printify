@@ -142,8 +142,8 @@ function App() {
           </ul>
         </div>
         <div className='header-btn flex gap-4'>
-          <button className='login-btn text-lg'>Log in</button>
-          <button className='signup-btn text-lg px-10'>Sign up</button>
+          <button className='login-btn'>Log in</button>
+          <button className='signup-btn'>Sign up</button>
         </div>
       </div>
 

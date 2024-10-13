@@ -878,7 +878,10 @@
            .signup-btn{
             /* border: 2px solid red ; */
             height: 30px;
-            width: 100px;
+            padding: 2px 22px;
+            text-align: center;
+            
+            /* width: 100px; */
           
            }
            .rating{
