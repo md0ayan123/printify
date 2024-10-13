@@ -228,7 +228,7 @@ function App() {
               <p> Whether you are just getting started or run an enterprise-level e-commerce business, we do everything we can to ensure a positive merchant experience. </p>
             </div>
           </div>
-          <div class="slider flex flex-col gap-5 h-screen">
+          <div class="slider flex flex-col gap-5 ">
             <div class="slider-wrapper flex flex-wrap gap-4  ">
               <div class="card ">
                 <div className='img-name-rating'>
