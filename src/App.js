@@ -23,23 +23,14 @@ import tiktokicon from './assets/icons/Tiktok-1.svg'
 import xlogoicon from './assets/icons/X-Logo-Green.svg'
 import youtubeicon from './assets/icons/youtube-icon.svg'
 import downarrow from './assets/down-arrow.png'
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  // useEffect(() => {
-  //   if (isMenuOpen) {
-  //     document.body.classList.add('bg-[#353a47bf]');
-  //   } else {
-  //     document.body.classList.remove('bg-[#353a47bf]');
-  //   }
-  //   return () => {
-  //     document.body.classList.remove('bg-[#353a47bf]');
-  //   };
-  // }, [isMenuOpen]);
+
   return (
     <div className="App" >
     
@@ -225,7 +216,7 @@ function App() {
         </div>
         <div className='talk-to-sales'>
           
-          <h4 className='talktosalestext text-xl'>Are you a large business looking for custom solutions?</h4>
+          <h4 className='talktosalestext '>Are you a large business looking for custom solutions?</h4>
           <button className='talktosale-btn'>Talk to sales</button>
         </div>
         <div class='social-proof '>

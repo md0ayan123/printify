@@ -247,6 +247,7 @@
 .talk-to-sales {
  
   display: flex;
+  gap: 15px;
   margin: 5% auto;
   justify-content: space-around;
   align-items: center;
@@ -715,9 +716,11 @@
   }
   .talktosale-btn{
   
-    padding: 11px 1px;
-    margin-right: 12px;
-  }
+    padding: 9px 4px;
+    width: 124px;
+
+    margin-right: 12px; 
+   }
   .talktosalestext{
     /* padding: 12px; */
     padding-left: 12px;
@@ -749,7 +752,8 @@
   
      padding: 9px 4px;
      width: 124px;
-     /* margin-right: 12px;  */
+
+     margin-right: 12px; 
     }
   }
     @media only screen and (max-width:600px){
@@ -800,7 +804,7 @@
         }
          @media only screen and (max-width:400px){
           .talktosale-btn{
-            padding: 8px 0px;
+            padding: 0px 0px;
             width: 180px;
           }
           .talk-to-sales{
@@ -815,10 +819,7 @@
         
          }
          @media only screen and (max-width:440px){
-          .talktosale-btn{
-            padding: 8px 0px;  
-            width: 22 0px;
-          }
+          
           .talktosalestext{
             font-size: 14px;
           }
@@ -831,6 +832,7 @@
             align-items: start  ;
           }
           .talk-to-sales{
+            
             width: 80%;
             background-size:100%;
             background-image: url("https://printify.com/pfh/media/talk-to-sales-N2GDBAGC.svg");
@@ -912,6 +914,14 @@
            .below-header{
             margin-top: 25%;
            }
+           .talktosalestext{
+            font-size: 14px;
+          }
+          .talktosale-btn{
+            /* border: 2px solid red; */
+            padding: 1px 1px;
+          
+          }
          }
     
   
